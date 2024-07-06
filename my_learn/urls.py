@@ -22,6 +22,5 @@ from django.urls import (path,
 from member import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('about/',views.about,name='member'),
     path('',include('member.urls')),
 ]
