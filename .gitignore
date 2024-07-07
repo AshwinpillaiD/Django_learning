@@ -126,3 +126,5 @@ dmypy.json
 # *__init__.py
 **/__init__.py
 
+**/migrations
+*migrations

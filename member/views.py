@@ -19,3 +19,7 @@ def blog_details(request):
 def profile(request):
     # return HttpResponse("<h2> Profile</h2>")
     return render(request,"profile.html")
+
+def contactUs(request):
+    # return HttpResponse("<h2> Profile</h2>")
+    return render(request,"contactus.html")
