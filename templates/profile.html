@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>profile</title>
-</head>
-<body>
-<nav>
+{% extends "base.html" %}
+{% block content %}
     <a href="{% url "blog_home" %}">Home</a><br>
     <a href="{% url "blog_details" %}">blog_details</a><br>
     <a href="{% url "profile" %}">blog_profile</a>
-</nav>
-<h3>profile</h3>
-    
-</body>
-</html>
+{% endblock content %}
