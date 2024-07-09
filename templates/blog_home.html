@@ -22,21 +22,43 @@
                 <a class="nav-link active" aria-current="page" href="{% url "blog_home" %}">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url "blog_details" %}">blog_details</a>
+                <a class="nav-link" href="{% url 'blog_details' %}">blog_details</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url "blog_details" %}">blog_profile</a>
+                <a class="nav-link" href="{% url 'blog_details' %}">blog_profile</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url "contactUs" %}">Contact us</a>
+                <a class="nav-link" href="{% url 'contactUs' %}">Contact us</a>
               </li>
             </ul>
-            <form class="d-flex">
+            {% comment %} <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            </form> {% endcomment %}
           </div>
         </div>
       </nav>
+    <div class="container my-4">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="{% url 'blog_details' %}" class="btn btn-primary">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="{% url 'blog_details' %}" class="btn btn-primary">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
   </body>
 </html>
